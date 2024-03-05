@@ -1,0 +1,35 @@
+$fuente-principal: Arial, Helvetica, sans-serif;
+$color-amarillo: #F4FE80;
+$padding-5: 15px;
+$border-5: 5px;
+
+.background-red{
+    background-color: red;
+}
+
+.text-white{
+    color: white;
+}
+
+main {
+
+    
+
+    .section-principal{
+
+        div{
+            .boton-principal{
+                text-decoration: none;
+                color: black;
+                font-family: $fuente-principal;
+                background-color: $color-amarillo;
+                padding: $padding-5;
+                border-radius: $border-5;
+            }
+            a{
+               @extend .boton-principal;
+               background-color: white;
+            }
+        }
+    }
+}

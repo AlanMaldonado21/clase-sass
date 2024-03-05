@@ -1,0 +1,29 @@
+$fuente-titulo: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+$fuente-texto :  Arial, Helvetica;
+$color-de-fondo: green;
+
+// MIXIN
+@mixin estilosTexto($family, $size, $grosor, $color) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $grosor;
+    color: $color;
+}
+
+
+main{
+
+    .section-principal{
+        h1{
+            @include estilosTexto(Arial, 15px , bold  , white);
+        }
+
+        p{
+            margin: 15px;
+            color: white;
+            text-align: start;
+            font-family: $fuente-texto;
+            margin-top: 25px;
+        }
+    }
+}

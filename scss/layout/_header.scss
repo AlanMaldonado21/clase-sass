@@ -1,0 +1,59 @@
+@mixin flex($flex, $espacio, $alinear){
+    display: $flex;
+    justify-content: $espacio;
+    align-items: $alinear;
+}
+
+header{
+    padding: 15px;
+
+    @include flex(flex, space-between ,center );
+    
+    border-bottom: 2px solid #2D2E36;
+    .container-logo{
+        img{
+            width: 7rem;
+        }
+    }
+
+    nav{
+        display: none;
+        ul{
+            list-style-type: none;
+            display: flex;
+            
+            li{
+                margin: 5px;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .enlace-azul{
+                    color: blue;
+                    font-weight: bold;
+                }
+                
+                #enlace-verde{
+                    color: green;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        a{
+            display: none;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width: 35px;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #1A1A1A;
+}
+
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #2D2E36;
+}
+header .container-logo img {
+  width: 7rem;
+}
+header nav {
+  display: none;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+header nav ul li {
+  margin: 5px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header nav ul li .enlace-azul {
+  color: blue;
+  font-weight: bold;
+}
+header nav ul li #enlace-verde {
+  color: green;
+  font-weight: bold;
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+header div a {
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header div img {
+  width: 35px;
+}
+
+.anuncio {
+  background-color: #F4FE80;
+  padding: 2px;
+}
+.anuncio p {
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.anuncio p span {
+  font-weight: bold;
+}
+
+main .section-principal h1 {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+main .section-principal p {
+  margin: 15px;
+  color: white;
+  text-align: start;
+  font-family: Arial, Helvetica;
+  margin-top: 25px;
+}
+
+.background-red {
+  background-color: red;
+}
+
+.text-white {
+  color: white;
+}
+
+main .section-principal div .boton-principal, main .section-principal div a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4FE80;
+  padding: 15px;
+  border-radius: 5px;
+}
+main .section-principal div a {
+  background-color: white;
+}
+
+header {
+  border-bottom: 1px solid white;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "logo nav menu";
+  padding: 15px;
+}
+header img {
+  grid-area: logo;
+}
+header nav {
+  grid-area: nav;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  color: white;
+  font-size: 14px;
+}
+header div {
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header div a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  color: white;
+  font-size: 14px;
+}
+header div img {
+  width: 25px;
+  margin: 15px;
+}
+
+/*# sourceMappingURL=style.scss.map */
